@@ -1,13 +1,31 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [shadow, setShadow] = useState(false);
+
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/cryptoverse" ||
+      router.asPath === "/goggle" ||
+      router.asPath === "/realtor"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setLinkColor("#1f2937");
+    }
+  }, [router]);
 
   const handleNavbar = () => {
     setNavbar(!navbar);
@@ -21,12 +39,12 @@ const Navbar = () => {
         setShadow(false);
       }
     };
-    window.addEventListener('scroll', handleShadow)
-  },[]);
-
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -37,23 +55,41 @@ const Navbar = () => {
         <Image
           src="/../public/assets/moje.png"
           alt="/"
-          width="60"
-          height="20"
+          width="80"
+          height="90"
         />
-        <ul className="hidden md:flex">
-          <Link href="/#home">
+        <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <Link to="home" spy={true} smooth={true} offset={10} duration={500}>
             <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
           </Link>
-          <Link href="/#about">
+          <Link to="about" spy={true} smooth={true} offset={10} duration={500}>
             <li className="ml-10 text-sm uppercase hover:border-b">About</li>
           </Link>
-          <Link href="/#skills">
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-150}
+            duration={500}
+          >
             <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
           </Link>
-          <Link href="/#projects">
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration={500}
+          >
             <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
           </Link>
-          <Link href="/#contact">
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+          >
             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
           </Link>
         </ul>
@@ -80,8 +116,8 @@ const Navbar = () => {
               <Image
                 src="/../public/assets/moje.png"
                 alt="/"
-                width="70"
-                height="45"
+                width="60"
+                height="80"
               />
               <div
                 onClick={handleNavbar}
@@ -99,20 +135,60 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex lex-col">
             <ul className="pl-3 uppercase">
-              <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                  Home
+                </li>
               </Link>
-              <Link href="/A">
-                <li className="py-4 text-sm">About</li>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                  About
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                  Skills
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Project</li>
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                  Projects
+                </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                  Contact
+                </li>
               </Link>
             </ul>
           </div>
@@ -121,18 +197,35 @@ const Navbar = () => {
               Let's connect
             </p>
             <div className="flex justify-between pl-3 my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-400">
-                <FaLinkedinIn />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-400">
-                <FaGithub />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-400">
-                <AiOutlineMail />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-400 ">
-                <BsFillPersonLinesFill />
-              </div>
+              <a
+                href="https://linkedin.com/in/sandra-margol-198816243/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
+                  <FaLinkedinIn />
+                </div>
+              </a>
+              <a
+                href="http://github.com/sandram92"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6  cursor-pointer hover:scale-110 ease-in duration-400">
+                  <FaGithub/>
+                </div>
+              </a>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={10}
+                duration={500}
+              >
+                <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
+                  <AiOutlineMail onClick = {() => setNavbar(false)}/>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

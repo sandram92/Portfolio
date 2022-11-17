@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import cryptoverse from "../public/assets/projects/cryptoverse.png";
-import Goggle from "../public/assets/projects/Goggle.png";
+// import Goggle from "../public/assets/projects/Goggle.png";
 import Realtor from "../public/assets/projects/Realtor.png";
 
 const Projects = () => {
@@ -18,15 +18,15 @@ const Projects = () => {
             backgroundImage={cryptoverse}
             projectUrl="/cryptoverse"
           />
-          <ProjectItem
+          {/* <ProjectItem
             title="Goggle"
             backgroundImage={Goggle}
-            projectUrl="/Goggle"
-          />
+            projectUrl="/goggle"
+          /> */}
           <ProjectItem
             title="Realtor"
             backgroundImage={Realtor}
-            projectUrl="/Realtor"
+            projectUrl="/realtor"
           />
         </div>
       </div>
