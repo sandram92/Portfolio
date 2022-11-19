@@ -23,22 +23,22 @@ const realtor = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className='text-[#a75767] pb-3'>Project</p>
-          <h2 className='pb-5'>Overview</h2>
+          <p className="text-[#a75767] pb-3">Project</p>
+          <h2 className="pb-5">Overview</h2>
           <p>
-            This app was built using React JS and Next.js and is hosted on
-            Vercel. Users are able to search properties to buy or rent. You will
-            be able to filter the property based on price, area, rooms and type.
-            You will be able to view property information by clicking on it.
+            This app was built using React and Next.js and is hosted on Vercel.
+            You can search for the properties to buy or rent. You can filter the
+            property based on the price , area, type etc. By clicking on each
+            property you can check for more information about particular search.
           </p>
           <a
-            href="https://realestate-ce3upzdm7-sandram92.vercel.app/"
+            href="https://realestate-sandram92.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="px-6 py-2  mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               View Live
-            </button>{" "}
+            </button>
           </a>
           <a
             href="https://github.com/sandram92/sandra_realestate"
