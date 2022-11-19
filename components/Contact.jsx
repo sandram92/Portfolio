@@ -11,14 +11,22 @@ const Contact = () => {
   const [alert, setAlert] = useState(false);
   const [value, setValue] = useState("");
 
+  const validEmail = (e) => {
+    let userInput = e.target.value;
+    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (userInput.match(mailformat)) {
+      setValue(userInput);
+    } else {
+      setValue("");
+    }
+  };
 
-  const alertMessage = () => {
+  const alertMessage = (e) => {
     setAlert(true);
     setTimeout(() => setAlert(false), 3000);
   };
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_gkr0yyt",
@@ -104,12 +112,11 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
-                    required
                     className="border-2 rounded-lg p-3 border-[#e2d0d4] flex"
                     type="email"
                     name="user_email"
-                    placeholder="Example@gmail.com"
-                    onChange={(e) => setValue(e.target.value)}
+                    placeholder="youremail@gmail.com"
+                    onChange={validEmail}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -127,7 +134,7 @@ const Contact = () => {
                     <textarea
                       className="border-2 rounded-lg p-3 border-[#e2d0d4]"
                       rows="10"
-                      placeholder="Write a lovely message to me :)"
+                      placeholder="Your message"
                       name="message"
                     ></textarea>
                   </div>
@@ -139,7 +146,7 @@ const Contact = () => {
                 </div>
                 {value === "" ? (
                   <button
-                    style={{ opacity: 0.2 }}
+                    style={{ opacity: 0.3 }}
                     disabled={value.length < 1}
                     onClick={alertMessage}
                     type="submit"
