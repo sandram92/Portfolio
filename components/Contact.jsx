@@ -9,7 +9,8 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
   const [alert, setAlert] = useState(false);
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState("");
+
 
   const alertMessage = () => {
     setAlert(true);
@@ -103,7 +104,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
-                  required
+                    required
                     className="border-2 rounded-lg p-3 border-[#e2d0d4] flex"
                     type="email"
                     name="user_email"
@@ -136,16 +137,26 @@ const Contact = () => {
                     </div>
                   )}
                 </div>
-                <button
-                  
-                   style = {{opacity: 0.2}}
-                  disabled={value.length < 1}  
-                  onClick={alertMessage}
-                  type="submit"
-                  className="w-full p-4 mt-4  shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white "
-                >
-                  Send Message
-                </button>
+                {value === "" ? (
+                  <button
+                    style={{ opacity: 0.2 }}
+                    disabled={value.length < 1}
+                    onClick={alertMessage}
+                    type="submit"
+                    className="w-full p-4 mt-4  shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white "
+                  >
+                    Send Message
+                  </button>
+                ) : (
+                  <button
+                    disabled={value.length < 1}
+                    onClick={alertMessage}
+                    type="submit"
+                    className="w-full p-4 mt-4  shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white "
+                  >
+                    Send Message
+                  </button>
+                )}
               </form>
             </div>
           </div>
