@@ -11,15 +11,7 @@ const Contact = () => {
   const [alert, setAlert] = useState(false);
   const [value, setValue] = useState("");
 
-  const validEmail = (e) => {
-    let userInput = e.target.value;
-    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (userInput.match(mailformat)) {
-      setValue(userInput);
-    } else {
-      setValue("");
-    }
-  };
+ 
 
   const alertMessage = (e) => {
     setAlert(true);
