@@ -3,29 +3,10 @@ import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [shadow, setShadow] = useState(false);
-
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
-  const router = useRouter();
-
-  useEffect(() => {
-    if (
-      router.asPath === "/cryptoverse" ||
-      router.asPath === "/goggle" ||
-      router.asPath === "/realtor"
-    ) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
-    } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
-    }
-  }, [router]);
 
   const handleNavbar = () => {
     setNavbar(!navbar);
@@ -44,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
+      style={{ backgroundColor: `#ecf0f3` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100]"
@@ -58,7 +39,7 @@ const Navbar = () => {
           width="80"
           height="90"
         />
-        <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+        <ul className="hidden md:flex">
           <Link to="home" spy={true} smooth={true} offset={10} duration={500}>
             <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
           </Link>
@@ -212,7 +193,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
               >
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6  cursor-pointer hover:scale-110 ease-in duration-400">
-                  <FaGithub/>
+                  <FaGithub />
                 </div>
               </a>
               <Link
@@ -223,7 +204,7 @@ const Navbar = () => {
                 duration={500}
               >
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
-                  <AiOutlineMail onClick = {() => setNavbar(false)}/>
+                  <AiOutlineMail onClick={() => setNavbar(false)} />
                 </div>
               </Link>
             </div>
