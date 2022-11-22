@@ -24,7 +24,7 @@ const goggle = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className='text-[#a75767]'>Project</p>
+          <p className="text-[#a75767]">Project</p>
           <h2>Overview</h2>
           <p>
             This app was built using React JS and is hosted on Netlify. This is
@@ -37,14 +37,18 @@ const goggle = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-6 py-2  mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">View Live</button>{" "}
+            <button className="px-6 py-2  mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
+              View Live
+            </button>{" "}
           </a>
           <a
             href="https://github.com/sandram92/my-goggle-search"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-9 py-2 mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">GITHUB</button>
+            <button className="px-9 py-2 mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
+              GITHUB
+            </button>
           </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">

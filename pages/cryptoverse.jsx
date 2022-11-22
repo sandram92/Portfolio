@@ -24,12 +24,12 @@ const cryptoverse = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className='text-[#a75767] pb-3'>Project</p>
-          <h2 className='pb-5'>Overview</h2>
+          <p className="text-[#a75767] pb-3">Project</p>
+          <h2 className="pb-5">Overview</h2>
           <p>
-            This app was built using React and is hosted on Netlify. Users
-            are able to search informations about cryptocurencies and check for
-            the latest news. 
+            This app was built using React and is hosted on Netlify. Users are
+            able to search informations about cryptocurencies and check for the
+            latest news.
           </p>
           <a
             href="https://sandrascryptoappreact.netlify.app/"
