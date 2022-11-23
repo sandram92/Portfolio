@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import Link from "next/link";
 import Image from "next/image";
 import cryptoverseImage from "../public/assets/projects/cryptoverse.png";
 import { RiRadioButtonFill } from "react-icons/ri";
@@ -75,10 +75,9 @@ const cryptoverse = () => {
             </div>
           </div>
         </div>
-
-        <a href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
-        </a>
+         <Link href='/#projects'>
+         <p className="underline cursor-pointer">Back</p>
+         </Link>
       </div>
     </div>
   );

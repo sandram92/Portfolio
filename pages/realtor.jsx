@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import RealtorIMG from "../public/assets/projects/Realtor.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
 
 const realtor = () => {
   return (
@@ -75,9 +76,9 @@ const realtor = () => {
             </div>
           </div>
         </div>
-        <a href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
-        </a>
+        <Link href='/#projects'>
+         <p className="underline cursor-pointer">Back</p>
+         </Link>
       </div>
     </div>
   );
