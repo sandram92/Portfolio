@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
-// import Typical from "react-typical";
+import Typical from "react-typical";
 
 const Main = () => {
   return (
@@ -13,14 +13,14 @@ const Main = () => {
             Let's build something together
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I'm Sandra
-            {/* <p className="text-[#b5838d]">
+            Hi, I'm 
+            <p className="text-[#b5838d]">
               <Typical
                 loop={Infinity}
                 wrapper="b"
                 steps={["Sandra", 2000, "Front-End Developer", 2000]}
               />
-            </p> */}
+            </p>
           </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I specialize in building mobile responsive front-end UI applications

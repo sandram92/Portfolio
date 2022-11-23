@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
+import Image from "next/image";
+import aboutPic from "../public/assets/about.avif"
 
 const About = () => {
   return (
@@ -40,11 +42,12 @@ const About = () => {
           </Link>
         </div>
         <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img
+          <Image
             className="rounded"
-            src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-            alt=""
-            srcset=""
+            src={aboutPic}
+            alt="/"
+            width='350'
+            height='200'
           />
         </div>
       </div>
