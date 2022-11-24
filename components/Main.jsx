@@ -18,7 +18,7 @@ const Main = () => {
               <Typical
                 loop={Infinity}
                 wrapper="b"
-                steps={["Sandra", 2000, "Front-End Developer", 2000]}
+                steps={["Sandra", 3000, "Front-End Developer", 3000]}
               />
             </p>
           </h1>
