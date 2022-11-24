@@ -31,7 +31,7 @@ const cryptoverse = () => {
             able to search informations about cryptocurencies and check for the
             latest news.
           </p>
-          <a
+          <Link
             href="https://sandrascryptoappreact.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -39,8 +39,8 @@ const cryptoverse = () => {
             <button className="px-6 py-2  mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               View Live
             </button>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/sandram92/cryptoapp"
             target="_blank"
             rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const cryptoverse = () => {
             <button className="px-9 py-2 mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               GITHUB
             </button>
-          </a>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

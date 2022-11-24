@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import GoggleIMG from "../public/assets/projects/Goggle.png";
-import Realtor from "../public/assets/projects/Realtor.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
 
 const goggle = () => {
   return (
@@ -32,7 +32,7 @@ const goggle = () => {
             they love to.
           </p>
 
-          <a
+          <Link
             href="https://goggle-search-s.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,8 +40,8 @@ const goggle = () => {
             <button className="px-6 py-2  mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               View Live
             </button>{" "}
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/sandram92/my-goggle-search"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const goggle = () => {
             <button className="px-9 py-2 mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               GITHUB
             </button>
-          </a>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -73,9 +73,9 @@ const goggle = () => {
             </div>
           </div>
         </div>
-        <a href="/#projects">
+        <Link href="/#projects">
           <p className="underline cursor-pointer">Back</p>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ const realtor = () => {
             property based on the price , area, type etc. By clicking on each
             property you can check for more information about particular search.
           </p>
-          <a
+          <Link
             href="https://realestate-sandram92.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,8 +40,8 @@ const realtor = () => {
             <button className="px-6 py-2  mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               View Live
             </button>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/sandram92/sandra_realestate"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const realtor = () => {
             <button className="px-9 py-2 mt-4 mr-2 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white">
               GITHUB
             </button>
-          </a>
+          </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
