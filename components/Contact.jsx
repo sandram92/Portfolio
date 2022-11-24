@@ -5,6 +5,8 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
+import contactImg  from '../public/assets/contact.avif'
 
 const Contact = () => {
   const form = useRef();
@@ -52,14 +54,16 @@ const Contact = () => {
         </p>
         <h3 className="py-4">Get in Touch</h3>
         <div className="grid lg:grid-cols-5 gap-8">
-          {/* left */}
+          
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="https://images.unsplash.com/photo-1544731612-de7f96afe55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                  src={contactImg}
                   alt="/"
+                  width={500}
+                  height={500}
                 />
               </div>
               <div>

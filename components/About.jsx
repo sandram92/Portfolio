@@ -46,8 +46,8 @@ const About = () => {
             className="rounded"
             src={aboutPic}
             alt="/"
-            width='350'
-            height='200'
+            width={3500}
+            height={250}
           />
         </div>
       </div>
