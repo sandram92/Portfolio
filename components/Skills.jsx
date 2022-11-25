@@ -74,7 +74,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/nextjs.png"
+                  src={"/assets/skills/nextjs.png"}
                   width="64"
                   height="64"
                   alt="/"
@@ -89,7 +89,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/node.png"
+                  src={"/assets/skills/node.png"}
                   width="64"
                   height="64"
                   alt="/"
@@ -104,7 +104,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto md:mt-5">
                 <Image
-                  src="/../public/assets/skills/npm.png"
+                  src={"/assets/skills/npm.png"}
                   width="64"
                   height="64"
                   alt="/"
@@ -119,7 +119,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/github1.png"
+                  src={"assets/skills/github1.png"}
                   width="64"
                   height="64"
                   alt="/"
@@ -134,7 +134,7 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/skills/bootstrap-logo-shadow.png"
+                  src={"assets/skills/bootstrap-logo-shadow.png"}
                   width="64"
                   height="64"
                   alt="/"
