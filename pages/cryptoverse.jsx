@@ -70,7 +70,7 @@ const cryptoverse = () => {
                 <RiRadioButtonFill className="pr-1" /> Netlify
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> ApI'ss
+                <RiRadioButtonFill className="pr-1" /> ApI's
               </p>
             </div>
           </div>
