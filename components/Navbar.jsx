@@ -34,7 +34,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full pr-3">
         <Image
-          src="/../public/assets/moje.png"
+          src={"/assets/moje.png"}
           alt="/"
           width="80"
           height="90"
@@ -95,7 +95,7 @@ const Navbar = () => {
           <div>
             <div className="flex justify-between items-center">
               <Image
-                src="/../public/assets/moje.png"
+                src={"/assets/moje.png"}
                 alt="/"
                 width="60"
                 height="80"
@@ -206,7 +206,7 @@ const Navbar = () => {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
                   <AiOutlineMail onClick={() => setNavbar(false)} />
                 </div>
-                
+
               </Link>
             </div>
           </div>
