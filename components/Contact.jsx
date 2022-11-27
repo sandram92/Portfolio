@@ -6,7 +6,7 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
-import contactImg  from '../public/assets/contact.avif'
+import contactImg from "../public/assets/contact.avif";
 // import Link from "next/link";
 
 const Contact = () => {
@@ -55,7 +55,6 @@ const Contact = () => {
         </p>
         <h3 className="py-4">Get in Touch</h3>
         <div className="grid lg:grid-cols-5 gap-8">
-          
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
