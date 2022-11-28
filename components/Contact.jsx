@@ -154,7 +154,7 @@ const Contact = () => {
                     disabled={value.length < 1}
                     onClick={alertMessage}
                     type="submit"
-                    className="w-full p-4 mt-4  shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white "
+                    className="w-full p-4 mt-4  shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#c297a0] to-[#ebd4d9] text-white cursor-not-allowed"
                   >
                     Send Message
                   </button>
