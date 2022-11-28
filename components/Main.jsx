@@ -13,7 +13,7 @@ const Main = () => {
             Let's build something together
           </p>
           <h1 className="pt-4 text-gray-700">I'm </h1>
-          <h1 className="py-4 text-[#b5838d]">
+          <h1 className="py-4 text-[#b5838d] text-5xl">
             <Typewriter
               options={{
                 strings: ["Sandra", "Front-End Web Developer"],
