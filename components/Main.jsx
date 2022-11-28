@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
-// import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
 
 const Main = () => {
   return (
@@ -12,15 +12,15 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest text-gray-600 pt-10">
             Let's build something together
           </p>
-          <h1 className="py-4 text-gray-700">
-            Hi, I'm Sandra
-            {/* <p className="text-[#b5838d]">
-              <Typical
-                loop={Infinity}
-                wrapper="b"
-                steps={["Sandra", 3000, "Front-End Developer", 3000]}
-              />
-            </p> */}
+          <h1 className="pt-4 text-gray-700">I'm </h1>
+          <h1 className="py-4 text-[#b5838d]">
+            <Typewriter
+              options={{
+                strings: ["Sandra", "Front-End Web Developer"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I specialize in building mobile responsive front-end UI applications

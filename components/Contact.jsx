@@ -7,7 +7,7 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import contactImg from "../public/assets/contact.avif";
-// import Link from "next/link";
+
 
 const Contact = () => {
   const form = useRef();
