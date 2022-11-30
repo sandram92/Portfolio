@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import cryptoverse from "../public/assets/projects/cryptoverse.png";
 // import Goggle from "../public/assets/projects/Goggle.png";
 import Realtor from "../public/assets/projects/Realtor.png";
+import ScoreKeeper from "../public/assets/projects/score.png";
 
 const Projects = () => {
   return (
@@ -27,6 +28,11 @@ const Projects = () => {
             title="Realtor"
             backgroundImage={Realtor}
             projectUrl="/realtor"
+          />
+          <ProjectItem
+            title="Score-keeper"
+            backgroundImage={ScoreKeeper}
+            projectUrl="/score"
           />
         </div>
         <div className="flex justify-center pt-10 text-[#665c61]">
