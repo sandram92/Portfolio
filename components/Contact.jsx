@@ -8,7 +8,6 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import contactImg from "../public/assets/contact.avif";
 
-
 const Contact = () => {
   const form = useRef();
   const [alert, setAlert] = useState(false);
@@ -24,9 +23,10 @@ const Contact = () => {
     }
   };
 
-  const alertMessage = (e) => {
+  const alertMessage = () => {
     setAlert(true);
     setTimeout(() => setAlert(false), 3000);
+    setValue("");
   };
   const sendEmail = (e) => {
     e.preventDefault();

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import Image from "next/image";
-import aboutPic from "../public/assets/about.avif"
+import aboutPic from "../public/assets/about.avif";
 
 const About = () => {
   return (
@@ -12,6 +12,7 @@ const About = () => {
             About
           </p>
           <h1 className="py-4 ">Who I Am</h1>
+
           <p className="py-2 text-gray-600">
             I have spent the last 10 years working as a Administrator. I have
             always had a knock for technology and working with computers. In
@@ -29,17 +30,29 @@ const About = () => {
             to keep learning, continue challenging myself, and do interesting
             things that matter.
           </p>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-10}
-            duration={500}
-          >
-            <p className="py-2 text-gray-600 underline cursor-pointer">
-              Check out for some more projects
-            </p>
-          </Link>
+          <div className="flex justify-between">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+            >
+              <p className="py-2 text-gray-600 underline cursor-pointer">
+                Check out for some more projects
+              </p>
+            </Link>
+            <div className="bg-[#e2c7cd] w-max px-9 py-1 my-5 rounded-lg animate-bounce">
+              <a
+                href="assets/SandraMargolCV.pdf"
+                download
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </div>
+          </div>
         </div>
         <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
