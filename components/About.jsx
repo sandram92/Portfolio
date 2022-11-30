@@ -42,7 +42,7 @@ const About = () => {
                 Check out for some more projects
               </p>
             </Link>
-            <div className="bg-[#e2c7cd] w-max px-9 py-1 my-5 rounded-lg animate-bounce">
+            <div className="bg-[#e7d4d8] w-max px-9 py-1 my-5 rounded-lg animate-bounce">
               <a
                 href="assets/SandraMargolCV.pdf"
                 download
