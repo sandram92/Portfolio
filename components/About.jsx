@@ -12,7 +12,6 @@ const About = () => {
             About
           </p>
           <h1 className="py-4 ">Who I Am</h1>
-
           <p className="py-2 text-gray-600">
             I have spent the last 10 years working as a Administrator. I have
             always had a knock for technology and working with computers. In

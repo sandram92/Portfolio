@@ -11,11 +11,11 @@ const ProjectItem = ({ backgroundImage, title, projectUrl }) => {
         alt="/"
       />
       <div className="hidden group-hover:block absolute">
-        <h3 className="m-4 text-2xl text-white tracking-widest text-center">
+        <h3 className="text-2xl text-white tracking-widest text-center">
           {title}
         </h3>
         <Link href={projectUrl}>
-          <p className="text-center py-1 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
+          <p className="text-center mt-3 py-1  rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
             More Info
           </p>
         </Link>
