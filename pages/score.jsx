@@ -7,7 +7,7 @@ import Link from "next/link";
 const score = () => {
   return (
     <div className="w-full">
-      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+      <div className="w-screen h-[30vh] lg:h-[40vh] relative m-4">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10" />
         <Image
           className="absolute z-1"
@@ -20,14 +20,14 @@ const score = () => {
           <h2>Score-Keeper</h2>
           <h3>HTML / CSS / Javascript</h3>
         </div>
-      </div>
+      </div> 
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
           <p className="text-[#a75767] py-2">Project</p>
           <h2>Overview</h2>
           <p className="py-5">
-            This app is a very simple pink pong score keeper.{" "}
+            This app is a very simple pink pong score keeper. 
           </p>
           <Link
             href="https://score-keeper-sm.netlify.app/"

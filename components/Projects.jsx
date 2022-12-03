@@ -4,6 +4,7 @@ import cryptoverse from "../public/assets/projects/cryptoverse.png";
 // import Goggle from "../public/assets/projects/Goggle.png";
 import Realtor from "../public/assets/projects/Realtor.png";
 import ScoreKeeper from "../public/assets/projects/score.png";
+import WeatherApp from "../public/assets/projects/weather.png";
 
 const Projects = () => {
   return (
@@ -33,6 +34,11 @@ const Projects = () => {
             title="Score-keeper"
             backgroundImage={ScoreKeeper}
             projectUrl="/score"
+          />
+           <ProjectItem
+            title="Weather-App"
+            backgroundImage={WeatherApp}
+            projectUrl="/weather"
           />
         </div>
         <div className="flex justify-center pt-10 text-[#665c61]">
