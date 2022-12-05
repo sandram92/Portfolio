@@ -81,15 +81,15 @@ const Navbar = () => {
       <div
         className={
           navbar
-            ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+            ? "md:hidden fixed right-0 top-0 w-full h-screen bg-black/70"
             : ""
         }
       >
         <div
           className={
             navbar
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[100%]  p-10  ease-out duration-500"
+              ? "fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed right-[100%]  p-10  ease-out duration-500"
           }
         >
           <div>
