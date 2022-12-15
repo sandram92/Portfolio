@@ -12,7 +12,7 @@ const About = () => {
             About
           </p>
           <h1 className="py-4 ">Who I Am</h1>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-600 text-lg sm:text-base">
             I have spent the last 10 years working as a Administrator. I have
             always had a knock for technology and working with computers. In
             2020 I’ve started working with HTML and CSS to make some personal
@@ -20,7 +20,7 @@ const About = () => {
             I’ve joined the Web Development Bootcamp where I was focusing on
             Java Script and expanding my knowledge on HTML and CSS.
           </p>
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-600 text-lg sm:text-base">
             Fascinating with how intricate programming can be I was quickly
             drawn to learn more. I started learning React.js and was even more
             enthused with making websites more interactive. I don’t like to

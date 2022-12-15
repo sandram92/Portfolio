@@ -22,7 +22,7 @@ const Main = () => {
               }}
             />
           </h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto text-lg sm:text-base">
             I specialize in building mobile responsive front-end UI applications
             that connect with API’s and other backend technologies. I’m
             passionate about learning new technologies and understand there is

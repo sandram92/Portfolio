@@ -69,7 +69,7 @@ const Contact = () => {
               <div>
                 <h2 className="py-4">Sandra</h2>
                 <p>Front-End Developer</p>
-                <p className="py-4">
+                <p className="py-4 text-lg sm:text-base">
                   I am available for freelance or full-time positions. Contact
                   me and let's talk.
                 </p>
