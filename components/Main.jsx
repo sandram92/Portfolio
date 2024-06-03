@@ -9,10 +9,10 @@ const Main = () => {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600 pt-10">
+          <p className="uppercase text-sm tracking-widest text-gray-600 pt-14">
             Let's build something together
           </p>
-          <h1 className="pt-4 text-gray-700">I'm </h1>
+          <h1 className="pt-10  text-gray-700">I'm </h1>
           <h1 className="py-4 text-[#b5838d] text-5xl">
             <Typewriter
               options={{
@@ -24,7 +24,7 @@ const Main = () => {
           </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto text-lg sm:text-base">
             I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
+            that connect with API’s and other frontend technologies. I’m
             passionate about learning new technologies and understand there is
             more than one way to accomplish a task. Though I am most proficient
             in building front-end applications using HTML, CSS, Javascript, and
