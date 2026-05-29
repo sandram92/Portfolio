@@ -36,8 +36,8 @@ const Navbar = () => {
         <Image
           src={"/assets/moje.png"}
           alt="/"
-          width="80"
-          height="90"
+          width="60"
+          height="60"
         />
         <ul className="hidden md:flex">
           <Link to="home" spy={true} smooth={true} offset={10} duration={500}>

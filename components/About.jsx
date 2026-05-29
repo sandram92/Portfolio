@@ -13,22 +13,25 @@ const About = () => {
           </p>
           <h1 className="py-4 ">Who I Am</h1>
           <p className="py-2 text-gray-600 text-lg sm:text-base">
-            I have spent the last 10 years working as a Administrator. I have
-            always had a knock for technology and working with computers. In
-            2020 I’ve started working with HTML and CSS to make some personal
-            projects to share with my friends. This become like a real passion.
-            I’ve joined the Web Development Bootcamp where I was focusing on
-            Java Script and expanding my knowledge on HTML and CSS.
+            I'm fascinated by technology and the endless opportunity to learn,
+            create, and solve problems, I started building small personal
+            projects and spending countless evenings teaching myself how to
+            code. What began as curiosity eventually grew into a career that I
+            genuinely love. Today, I work as a Software Developer, building
+            modern web applications and real-time systems used by businesses
+            every day. My focus is creating intuitive user experiences and
+            turning complex challenges into simple, scalable solutions. I
+            primarily work with React, SvelteKit, TypeScript, and JavaScript,
+            alongside Node.js, PostgreSQL, AWS, WebSockets, and modern testing
+            frameworks. I enjoy working across the full development lifecycle,
+            from early ideas and design discussions through to implementation
+            and deployment. <br></br><div class="mt-2">What I love most about software development is that
+            there is always something new to learn, improve, and build. Even
+            more rewarding is the ability to create something that didn't exist
+            before—transforming an idea into a product that can make a real
+            difference to the people who use it.</div>
           </p>
-          <p className="py-2 text-gray-600 text-lg sm:text-base">
-            Fascinating with how intricate programming can be I was quickly
-            drawn to learn more. I started learning React.js and was even more
-            enthused with making websites more interactive. I don’t like to
-            define myself by the work I’ve done. I define myself by the work I
-            want to do. Skills can be taught, personality is inherent. I prefer
-            to keep learning, continue challenging myself, and do interesting
-            things that matter.
-          </p>
+
           <div className="flex justify-between">
             <Link
               to="projects"

@@ -16,21 +16,20 @@ const Main = () => {
           <h1 className="py-4 text-[#b5838d] text-5xl">
             <Typewriter
               options={{
-                strings: ["Sandra", "Front-End Web Developer"],
+                strings: ["Sandra", "Software Developer"],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto text-lg sm:text-base">
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other frontend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React. I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+          <p className="py-4 text-gray-600 max-w-[70%] m-auto  text-lg">
+            I believe where you start in life doesn't have to define where you
+            finish. What began as curiosity became a career, and I'm proof that
+            determination, continuous learning, and persistence can completely
+            change your future. I don't like to define myself by the work I've
+            done. I define myself by the work I want to do. Skills can be
+            taught, personality is inherent. I prefer to keep learning, continue
+            challenging myself, and do interesting things that matter.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-8">
             <a
