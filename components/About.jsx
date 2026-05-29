@@ -25,11 +25,14 @@ const About = () => {
             alongside Node.js, PostgreSQL, AWS, WebSockets, and modern testing
             frameworks. I enjoy working across the full development lifecycle,
             from early ideas and design discussions through to implementation
-            and deployment. <br></br><div class="mt-2">What I love most about software development is that
-            there is always something new to learn, improve, and build. Even
-            more rewarding is the ability to create something that didn't exist
-            before—transforming an idea into a product that can make a real
-            difference to the people who use it.</div>
+            and deployment.
+          </p>
+          <p className="mt-2 py-2 text-gray-600 text-lg sm:text-base">
+            What I love most about software development is that there is always
+            something new to learn, improve, and build. Even more rewarding is
+            the ability to create something that didn't exist
+            before-transforming an idea into a product that can make a real
+            difference to the people who use it.
           </p>
 
           <div className="flex justify-between">

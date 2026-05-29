@@ -33,46 +33,57 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full pr-3">
-        <Image
-          src={"/assets/moje.png"}
-          alt="/"
-          width="60"
-          height="60"
-        />
+        <Image src={"/assets/moje.png"} alt="/" width="60" height="60" />
         <ul className="hidden md:flex">
-          <Link to="home" spy={true} smooth={true} offset={10} duration={500}>
-            <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-          </Link>
-          <Link to="about" spy={true} smooth={true} offset={10} duration={500}>
-            <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-          </Link>
-          <Link
-            to="skills"
-            spy={true}
-            smooth={true}
-            offset={-150}
-            duration={500}
-          >
-            <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-          </Link>
-          <Link
-            to="projects"
-            spy={true}
-            smooth={true}
-            offset={-20}
-            duration={500}
-          >
-            <li className="ml-10 text-sm uppercase hover:border-b">Projects</li>
-          </Link>
-          <Link
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-10}
-            duration={500}
-          >
-            <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
-          </Link>
+          <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <Link to="home" spy={true} smooth={true} offset={10} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              About
+            </Link>
+          </li>
+          <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <Link
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+            >
+              Skills
+            </Link>
+          </li>
+          <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer">
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-10}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
         <div onClick={handleNavbar} className="md:hidden">
           <AiOutlineMenu size={26} />
@@ -94,12 +105,7 @@ const Navbar = () => {
         >
           <div>
             <div className="flex justify-between items-center">
-              <Image
-                src={"/assets/moje.png"}
-                alt="/"
-                width="60"
-                height="80"
-              />
+              <Image src={"/assets/moje.png"} alt="/" width="60" height="80" />
               <div
                 onClick={handleNavbar}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -116,61 +122,76 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex lex-col">
             <ul className="pl-3 uppercase">
-              <Link
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+              <li
+                onClick={() => setNavbar(false)}
+                className="py-4 text-sm cursor-pointer"
               >
-                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Home
-                </li>
-              </Link>
-              <Link
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                </Link>
+              </li>
+              <li
+                onClick={() => setNavbar(false)}
+                className="py-4 text-sm cursor-pointer"
               >
-                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   About
-                </li>
-              </Link>
-              <Link
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                </Link>
+              </li>
+              <li
+                onClick={() => setNavbar(false)}
+                className="py-4 text-sm cursor-pointer"
               >
-                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                <Link
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Skills
-                </li>
-              </Link>
-              <Link
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                </Link>
+              </li>
+              <li
+                onClick={() => setNavbar(false)}
+                className="py-4 text-sm cursor-pointer"
               >
-                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Projects
-                </li>
-              </Link>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+                </Link>
+              </li>
+              <li
+                onClick={() => setNavbar(false)}
+                className="py-4 text-sm cursor-pointer"
               >
-                <li onClick={() => setNavbar(false)} className="py-4 text-sm">
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   Contact
-                </li>
-              </Link>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="pt-40">
@@ -206,7 +227,6 @@ const Navbar = () => {
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-400">
                   <AiOutlineMail onClick={() => setNavbar(false)} />
                 </div>
-
               </Link>
             </div>
           </div>

@@ -2,7 +2,12 @@ import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-scroll";
-import Typewriter from "typewriter-effect";
+import dynamic from "next/dynamic";
+
+const Typewriter = dynamic(() => import("typewriter-effect"), {
+  ssr: false,
+  loading: () => <span>Sandra</span>,
+});
 
 const Main = () => {
   return (
