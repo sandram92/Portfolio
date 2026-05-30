@@ -8,12 +8,10 @@ import WeatherApp from "../public/assets/projects/weather.png";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full relative">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="uppercase text-xl tracking-widest py-4  text-[#b5838d]">
-          Projects
-        </p>
-        <h2>What I've build</h2>
+    <section id="projects" className="w-full relative px-0 sm:px-3 py-16">
+      <div className="w-full max-w-none sm:max-w-[1240px] mx-auto px-3 sm:px-0">
+        <p className="section-tag py-4">Projects</p>
+        <h2 className="text-[var(--text-primary)]">What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8 py-4">
           <ProjectItem
             title="Cryptoverse"
@@ -41,11 +39,11 @@ const Projects = () => {
             projectUrl="/calculator"
           />
         </div>
-        <div className="flex justify-center pt-10 text-[#665c61]">
-          More comming soon
+        <div className="flex justify-center pt-10 text-[var(--text-muted)]">
+          More coming soon
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

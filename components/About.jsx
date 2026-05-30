@@ -5,14 +5,15 @@ import aboutPic from "../public/assets/about.avif";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen flex items-center p-2 py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
-          <p className="text-xl tracking-widest uppercase text-[#b5838d]">
-            About
-          </p>
-          <h1 className="py-4 ">Who I Am</h1>
-          <p className="py-2 text-gray-600 text-lg sm:text-base">
+    <section
+      id="about"
+      className="w-full md:min-h-screen flex items-center px-0 sm:px-3 py-16"
+    >
+      <div className="w-full max-w-none sm:max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 glass-card p-6 sm:p-8 rounded-none sm:rounded-2xl">
+        <div className="col-span-2 reveal-up">
+          <p className="section-tag">About</p>
+          <h1 className="py-4 text-[var(--text-primary)]">Who I Am</h1>
+          <p className="py-2 text-[var(--text-muted)] text-lg sm:text-base">
             I'm fascinated by technology and the endless opportunity to learn,
             create, and solve problems, I started building small personal
             projects and spending countless evenings teaching myself how to
@@ -27,7 +28,7 @@ const About = () => {
             from early ideas and design discussions through to implementation
             and deployment.
           </p>
-          <p className="mt-2 py-2 text-gray-600 text-lg sm:text-base">
+          <p className="mt-2 py-2 text-[var(--text-muted)] text-lg sm:text-base">
             What I love most about software development is that there is always
             something new to learn, improve, and build. Even more rewarding is
             the ability to create something that didn't exist
@@ -35,31 +36,31 @@ const About = () => {
             difference to the people who use it.
           </p>
 
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
             <Link
               to="projects"
               spy={true}
-              smooth={true}
+              smooth={false}
+              delay={0}
               offset={-10}
-              duration={500}
+              duration={0}
             >
-              <p className="py-2 text-gray-600 underline cursor-pointer">
+              <p className="py-2 text-[var(--text-muted)] underline cursor-pointer hover:text-[var(--text-primary)] transition-colors duration-300">
                 Check out for some more projects
               </p>
             </Link>
-            <div className="bg-[#e7d4d8] w-max px-9 py-1 my-5 rounded-lg animate-bounce">
-              <a
-                href="assets/SandraMargolCV.pdf"
-                download
-                target="_blank"
-                rel="noreferrer"
-              >
-                Resume
-              </a>
-            </div>
+            <a
+              href="assets/Sandra_Margol_CV.pdf"
+              download
+              target="_blank"
+              rel="noreferrer"
+              className="neo-button"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
-        <div className="w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto soft-panel flex items-center justify-center p-4 hover:scale-[1.02] transition-transform duration-300 reveal-up delay-2">
           <Image
             className="rounded"
             src={aboutPic}
@@ -69,7 +70,7 @@ const About = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
