@@ -164,9 +164,9 @@ const Navbar = () => {
               className="border-b my-4"
               style={{ borderColor: "var(--border)" }}
             >
-              <p className="ml-3 w-[85%] md:w-[90] py-4 text-[var(--text-muted)]">
+              <p className="ml-3 w-[85%] md:w-[90] py-4 text-[var(--text-muted)] ">
                 {" "}
-                Lets build something together
+                Let's build something together
               </p>
             </div>
           </div>
