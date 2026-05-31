@@ -18,7 +18,7 @@ const Main = () => {
       <div className="glow-orb glow-orb-top" />
       <div className="" />
       <div className="max-w-none sm:max-w-[1240px] w-full min-h-screen mx-auto flex justify-center items-center px-0 sm:px-4 pt-16 pb-6 relative z-10">
-        <div className="glass-card w-full max-w-none sm:max-w-4xl p-6 sm:p-10 reveal-up rounded-none sm:rounded-2xl">
+        <div className="sm:glass-card w-full max-w-none sm:max-w-4xl p-6 sm:p-10 reveal-up rounded-none sm:rounded-2xl">
           <p className="section-tag reveal-up delay-1 mt-8">
             Let's build something together
           </p>
